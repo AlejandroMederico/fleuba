@@ -6,7 +6,7 @@ from fastapi.security import OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from backend.config import SECRET_KEY, ACCESS_TOKEN_EXPIRE_MINUTES, ALGORITHM
 from backend.auth.models import User
-from backend.database import get_db
+from backend.db.session import get_db
 from backend import firebase_admin_init
 from firebase_admin import auth as firebase_auth
 from backend.logger.logger import logger

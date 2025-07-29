@@ -3,7 +3,7 @@ from fastapi.security import OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 
 from backend.auth import schemas, models, auth_service
-from backend.database import get_db
+from backend.db.session import get_db
 from backend.auth.dependencies import AdminOnly
 from backend.auth.decorators import User, admin_required
 from backend.auth.schemas import PasswordUpdate
