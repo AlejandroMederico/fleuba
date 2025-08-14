@@ -1,13 +1,6 @@
 from sqlalchemy.orm import Session
-from .models import Display, DisplayComponent, DisplayElectronicCards
-from .schemas import (
-    DisplayCreate,
-    DisplayUpdate,
-    DisplayComponentCreate,
-    DisplayComponentUpdate,
-    DisplayElectronicCardsCreate,
-    DisplayElectronicCardsUpdate,
-)
+from .models import Display
+from .schemas import DisplayCreate, DisplayUpdate
 
 
 def create_display(db: Session, obj_in: DisplayCreate):
